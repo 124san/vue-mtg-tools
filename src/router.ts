@@ -6,7 +6,7 @@ import Home from './components/Home.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", redirect: { name: 'Home' }},
+    { path: "/", redirect: { name: 'home' }},
     { path: "/vue-mtg-tools", name:'home', component: Home },
     { path: "/deckanalyzer", name:'deckanalyzer', component: DeckAnalyzer },
     { path: "/cardfetcher", name:'cardfetcher', component: CardFetcher }
