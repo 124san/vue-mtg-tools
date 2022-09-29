@@ -26,6 +26,10 @@ export function getMtgSet(setCode: string) {
     return axios.get(`/sets/${setCode}`)
 }
 
+export function parseDate(dateString: string) {
+    return date.parse(dateString, 'YYYY-MM-DD')
+}
+
 export function calculateAge(releaseDate: string) {
     return date.subtract(new Date(), date.parse(releaseDate, 'YYYY-MM-DD')).toDays()
 }
